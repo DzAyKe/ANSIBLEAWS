@@ -39,7 +39,7 @@ commande pour détruire les instances:
 terraform destroy
 ```
 
-Créez un dossier “Playbook” dans le dossier “Atelier Ansible”. Importez un fichier “inventory.yml” (modifiez le).
+Créez un dossier “Playbook” dans le dossier “Atelier Ansible”. Importez un fichier “inventory.yml”
 
 Ping les machines:
 
