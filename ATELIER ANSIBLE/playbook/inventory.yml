@@ -1,0 +1,19 @@
+webservers:
+  hosts:
+    frontend:
+      ansible_host: ec2-13-48-27-94.eu-north-1.compute.amazonaws.com
+    backend:
+      ansible_host: ec2-16-171-138-185.eu-north-1.compute.amazonaws.com
+
+#databases: refaire une vm pour gérer la database
+#  hosts:
+#    database:
+#      ansible_host: ec2-16-171-138-185.eu-north-1.compute.amazonaws.com
+
+fcs:
+  children:
+    webservers:
+    #databases:
+  vars:
+    ansible_user: ec2-user
+    ansible_python_interpreter: /usr/bin/python3.9
